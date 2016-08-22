@@ -4,7 +4,7 @@ var Route;
     class Api {
         get(req, res, next) {
             res.json({
-                "version": "1.1",
+                "version": "1.2",
                 "status": "success"
             });
         }
