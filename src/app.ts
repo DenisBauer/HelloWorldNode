@@ -73,28 +73,28 @@ class Server {
 }
 
   /**
- * Configure routes
- *
- * @class Server
- * @method routes
- * @return void
- */
-private routes() {
-  //get router
-  let router: express.Router;
-  router = express.Router();
+   * Configure routes
+   *
+   * @class Server
+   * @method routes
+   * @return void
+   */
+  private routes() {
+    //get router
+    let router: express.Router;
+    router = express.Router();
 
-  //create routes
-  var index: indexRoute.Index = new indexRoute.Index();
-  var api: apiRoute.Api = new apiRoute.Api();
+    //create routes
+    var index: indexRoute.Index = new indexRoute.Index();
+    var api: apiRoute.Api = new apiRoute.Api();
 
-  //home page
-  router.get("/", index.index.bind(index.index));
-  router.get("/api", api.get.bind(api.get));
+    //home page
+    router.get("/", index.index.bind(index.index));
+    router.get("/api", api.get.bind(api.get));
 
-  //use router middleware
-  this.app.use(router);
-}
+    //use router middleware
+    this.app.use(router);
+  }
 }
 
 var server = Server.bootstrap();
