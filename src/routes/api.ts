@@ -10,7 +10,7 @@ module Route {
     public get(req: express.Request, res: express.Response, next: express.NextFunction) {
       res.json(
             {
-                "version": "1.0",
+                "version": "1.1",
                 "status": "success"
             });
     }
