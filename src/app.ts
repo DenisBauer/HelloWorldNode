@@ -7,7 +7,7 @@ import * as express from "express";
 import * as path from "path";
 
 import * as indexRoute from "./routes/index";
-import * as apiRoute from "./routes/Api";
+import * as apiRoute from "./routes/api";
 
 /**
  * The server.
