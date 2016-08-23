@@ -11,7 +11,7 @@ module Route {
     public index(req: express.Request, res: express.Response, next: express.NextFunction) {
       var nr = require("newrelic");
       nr.incrementMetric("TestMetric", 100);
-      nr.recordCustomEvent("index rendered");
+      nr.recordCustomEvent("viewRendered", { "view": "index" });
  //render page
       res.render("index");
     }
