@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const express = require("express");
 const path = require("path");
 const indexRoute = require("./routes/index");
-const apiRoute = require("./routes/Api");
+const apiRoute = require("./routes/api");
 class Server {
     constructor() {
         this.app = express();

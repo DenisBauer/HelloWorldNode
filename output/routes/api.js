@@ -12,4 +12,4 @@ var Route;
     Route.Api = Api;
 })(Route || (Route = {}));
 module.exports = Route;
-//# sourceMappingURL=Api.js.map
+//# sourceMappingURL=api.js.map
