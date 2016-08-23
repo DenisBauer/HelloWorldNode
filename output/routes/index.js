@@ -4,7 +4,7 @@ var Route;
     class Index {
         index(req, res, next) {
             var nr = require("newrelic");
-            nr.incrementMetric("TestMetric");
+            nr.incrementMetric("TestMetric", 100);
             nr.recordCustomEvent("index rendered");
             res.render("index");
         }
