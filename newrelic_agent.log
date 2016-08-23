@@ -10,3 +10,7 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"Deniss-MacBook-Pro.local","pid":6489,"time":"2016-08-23T08:24:33.733Z","msg":"Starting New Relic for Node.js connection process."}
 {"v":0,"level":30,"name":"newrelic","hostname":"Deniss-MacBook-Pro.local","pid":6489,"time":"2016-08-23T08:24:41.588Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/1103287/applications/22199428","component":"new_relic_response"}
 {"v":0,"level":30,"name":"newrelic","hostname":"Deniss-MacBook-Pro.local","pid":6489,"time":"2016-08-23T08:24:41.588Z","msg":"Connected to collector-154.newrelic.com:443 with agent run ID 95345827323620722.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Deniss-MacBook-Pro.local","pid":8969,"time":"2016-08-23T14:10:04.453Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Deniss-MacBook-Pro.local","pid":8969,"time":"2016-08-23T14:10:10.846Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/1103287/applications/22199428","component":"new_relic_response"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Deniss-MacBook-Pro.local","pid":8969,"time":"2016-08-23T14:10:10.847Z","msg":"Connected to collector-154.newrelic.com:443 with agent run ID 95345827324897951.","component":"collector_api"}
+{"v":0,"level":40,"name":"newrelic","hostname":"Deniss-MacBook-Pro.local","pid":8969,"time":"2016-08-23T14:10:21.738Z","msg":"recordCustomEvent requires an object for its second argument, got undefined (undefined)","component":"api"}

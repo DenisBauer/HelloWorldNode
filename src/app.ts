@@ -5,6 +5,7 @@
 import * as bodyParser from "body-parser";
 import * as express from "express";
 import * as path from "path";
+//import * as newrelic from "../node_modules/newrelic";
 
 import * as indexRoute from "./routes/index";
 import * as apiRoute from "./routes/api";
@@ -47,6 +48,10 @@ class Server {
   }
 
   private config() {
+    var nr = require("newrelic");
+    //var nr = new newrelic.API();
+    nr.recordMetric("TestMetric", 0);
+
     //configure jade
     this.app.set("views", path.join(__dirname, "../views"));
     this.app.set("view engine", "jade");

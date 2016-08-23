@@ -14,6 +14,8 @@ class Server {
         return new Server();
     }
     config() {
+        var nr = require("newrelic");
+        nr.recordMetric("TestMetric", 0);
         this.app.set("views", path.join(__dirname, "../views"));
         this.app.set("view engine", "jade");
         this.app.use(bodyParser.json());

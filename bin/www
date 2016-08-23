@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 "use strict";
 
+var newrelic = require("newrelic");
+
 //module dependencies.
 var app = require("../output/app");
 //var debug = require("debug")("express:server");
 var http = require("http");
-
-var newrelic = require("newrelic");
 
 //get port from environment and store in Express.
 var port = normalizePort(process.env.PORT || 8081);
